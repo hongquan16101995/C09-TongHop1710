@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="text" onclick="display()">Name </label><input type="text" id="text">
+<p id="result"></p>
+<p id="result1"></p>
+<script>
+  //nhập dữ liệu
+  // let string = prompt("Nhập gì đó: ")
+  // console.log(string)
+  function display() {
+    let string1 = document.getElementById("text").value
+    // document.write(string1)
+    document.getElementById("result").innerText = "<h1>" + string1 + "</h1>"
+    document.getElementById("result1").innerHTML = "<b>" + string1 + "</b>" // bold
+  }
+
+  //xuất dữ liệu
+  // document.write(string1)
+  // alert("C09K")
+</script>
+</body>
+</html>
